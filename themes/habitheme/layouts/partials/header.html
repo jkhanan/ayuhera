@@ -1,0 +1,208 @@
+<header
+    class="h-16 bg-white bg-opacity-75 backdrop-blur fixed w-screen inset-0 border-b border-gray-200"
+>
+    <div
+        class="w-11/12 md:w-10/12 mx-auto flex flex-row content-center items-center space-x-4 content-stretch h-full justify-between"
+    >
+        <a href="{{ .Site.BaseURL }}">
+            <img src="/icons/habiLogo.svg" width="60" alt="habiLogo" />
+        </a>
+        <span class="w-px bg-gray-400 h-6 md:flex hidden"> </span>
+        <nav class="items-center justify-between w-full md:flex hidden">
+            <div
+                class="flex flex-row space-x-6 text-base font-medium list-none"
+            >
+                <a
+                    class="hover:text-blue-500 inline-flex items-center flex-row items-center space-x-1.5"
+                    href="{{ .Site.BaseURL }}"
+                >
+                    <svg
+                        width="21"
+                        height="21"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        ></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a
+                    class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+                    href="/about"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>About</span>
+                </a>
+                
+                <a
+                    class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+                    href="/contact"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+                <a
+                    class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+                    href="/blog"
+                >
+                    <svg
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                        ></path>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="flex flex-row space-x-4">
+                
+            </div>
+        </nav>
+
+        <!-- BAR when responsive -->
+        <label class="flex md:hidden text-2xl text-gray-600 hamburger">
+            <img
+                src="/icons/menu.svg"
+                width="35"
+                height="35"
+                alt="menu button"
+                id="icons"
+            />
+        </label>
+    </div>
+</header>
+<div
+    class="bg-white bg-opacity-75 backdrop-blur top-16 md:hidden flex flex-col text-center space-y-6 h-full w-full pt-8 px-14 sm:px-32 fixed z-50 text-xl font-medium menu-res hidden"
+>
+    <a
+        class="hover:text-blue-500 inline-flex items-center flex-row items-center space-x-1.5"
+        href="{{ .Site.BaseURL }}"
+    >
+        <svg
+            width="21"
+            height="21"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            ></path>
+        </svg>
+        <span>Home</span>
+    </a>
+    <a
+        class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+        href="/about"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>About</span>
+    </a>
+    <a
+        class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+        href="/contact"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>Contact</span>
+    </a>
+    <a
+        class="hover:text-blue-500 inline-flex flex-row items-center space-x-1.5"
+        href="/blog"
+    >
+        <svg
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+            ></path>
+        </svg>
+        <span>Blog</span>
+    </a>
+    
+</div>
