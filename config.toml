@@ -1,6 +1,6 @@
-baseURL = 'https://habibi2004.tech/'
+baseURL = 'https://www.ayuhera.my.id/'
 languageCode = 'en-us'
-title = 'HBBIIIII - Ahmad Rizky Nusantara Habibi'
+title = 'AYUHERA - Ayu Herawati'
 theme = 'habitheme'
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
